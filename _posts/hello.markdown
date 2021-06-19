@@ -5,6 +5,5 @@ date:   2021-06-18 17:46:57 +0300
 categories: my blogs
 ---
 
-{% highlight python3 %}
-print("Hello World")
-{% endhighlight %}
+Hello People, Welcome to my world! 
+Everything is possible in my fucking world!
