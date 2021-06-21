@@ -1,0 +1,8 @@
+I"×
+<figure class="highlight"><pre><code class="language-python3" data-lang="python3">my_string = 'hi'
+print(my_string)
+print(my_string[0])
+print(len(my_string))
+
+print( my_string + "", "there" )</code></pre></figure>
+:ET

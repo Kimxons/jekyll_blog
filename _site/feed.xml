@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-21T15:41:17+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts - Meshack</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Hello World!</title><link href="/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;my_string = 'hi'
+print(my_string)
+print(my_string[0])
+print(len(my_string))
+
+print( my_string + &quot;&quot;, &quot;there&quot; )&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The ouput will be:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;hi
+h
+2
+hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Working with strings in python.</summary></entry></feed>
