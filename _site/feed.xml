@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2021-06-22T18:14:59+03:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Part 1: Introduction to Django</title><link href="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html" rel="alternate" type="text/html" title="Part 1: Introduction to Django" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2021-06-22T18:55:41+03:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Part 1: Introduction to Django</title><link href="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html" rel="alternate" type="text/html" title="Part 1: Introduction to Django" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;Django&lt;/a&gt; is free, open-source and relies on Model View Controller (MVC) pattern. Model is the component that contains the Business logic, View contains the User Interface (UI) logic while Controller is the main control component. Django is fast, secure and scalable, hence the phrase “A web framework for perfectionists with deadlines.”&lt;/p&gt;
@@ -54,7 +54,88 @@ python3 -V #To check python version from your terminal (python3)
 
 &lt;p&gt;Visit http://127.0.0.1:8000/ to have a view of your first Django project.&lt;/p&gt;
 
-&lt;p&gt;Congratulations! You just created your first Django web app.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">DJANGO is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:8000/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
+&lt;p&gt;Congratulations! You just created your first Django web app.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">DJANGO is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.</summary></entry><entry><title type="html">Part 2: Code editors &amp;amp; Version control system</title><link href="http://localhost:8000/jekyll/update/2021/06/22/editors-and-vcs.html" rel="alternate" type="text/html" title="Part 2: Code editors &amp;amp; Version control system" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/22/editors-and-vcs</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/22/editors-and-vcs.html">&lt;h3&gt;Configuring our development environment&lt;/h3&gt;
+
+&lt;h4&gt;Install a code editor&lt;/h4&gt;
+
+&lt;p&gt;A code editor produces rich texts (with fonts and formatting) unlike Word. They are specialized specifically for editing code.&lt;/p&gt;
+
+&lt;p&gt;There are so many code editors out here you can use. Some people prefer IDEs (Integrated Development Environments) such as PyCharm, especially python developers.&lt;/p&gt;
+
+&lt;p&gt;I have a few recommendations to help you get going.&lt;/p&gt;
+
+&lt;h4&gt;Visual Studio Code&lt;/h4&gt;
+
+&lt;p&gt;Vs-code is a nice code editor developed by Microsoft for windows, macOs and Linux. It is a powerful code editor with support for debugging, syntax highlighting, code snippets, embedded git control and many more. You can download it &lt;a href=&quot;&amp;quot;https://code.visualstudio.com/download&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Sublime text 3&lt;/h4&gt;
+
+&lt;p&gt;Available for all operating systems. It is a very popular code editor with a free evaluation period. You can download it &lt;a href=&quot;&amp;quot;https://www.sublimetext.com/3&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Atom&lt;/h4&gt;
+
+&lt;p&gt;It’s a free and open-source code editor. You can download it &lt;a href=&quot;&amp;quot;https://atom.io/&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Install git - VCS&lt;/h4&gt;
+
+&lt;p&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is used by many programmers. On Ubuntu, you can install it using this command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt install git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On windows, you can download git from &lt;a href=&quot;&amp;quot;https://git-scm.com/&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After installation, create a free GitHub account &lt;a href=&quot;&amp;quot;https://github.com/&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Set up your username, email address and code editor, for our case we are using visual studio code. Type these commands on your terminal;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;config --global user.name &lt;username&gt;&lt;br /&gt;
+&lt;code&gt;config --global user.email &lt;user-email&gt;&lt;br /&gt;
+&lt;code&gt;config --global core.editor vscode&lt;/code&gt;&lt;/user-email&gt;&lt;/code&gt;&lt;/username&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we are ready to start coding!!&lt;/p&gt;
+
+&lt;h4&gt;Create a git repository&lt;/h4&gt;
+
+&lt;p&gt;In order put your project up on GitHub, you’ll need to create a repo for it to live in. You can follow the guide by &lt;a href=&quot;&amp;quot;https://docs.github.com/en/get-started/quickstart/create-a-repo&amp;quot;&quot;&gt;GitHub&lt;/a&gt; on how to create your first git repo and get going.&lt;/p&gt;
+
+&lt;p&gt;Let’s call our repo Mysite. On your terminal, initialize a remote repository on your computer using this command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should get this out output:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Initialized empty Git repository in /{directory-name}/.git/ &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add your files to your remote repo using this command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Commit your changes using this command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -m &quot;commit message&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s configure our remote repo;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote add origin https://github.com/{your-name}/Mysite.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Confirm if your remote repo is well configured;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should see the output below in your terminal;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;origin https://github.com/{your-name}/Mysite.git (fetch)
+origin https://github.com/{your-name}/Mysite.git (push)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Awesome! It worked!&lt;/p&gt;
+
+&lt;p&gt;Let’s push our code..&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git push -u origin main or master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You will be prompted to enter your username and password.&lt;/p&gt;
+
+&lt;p&gt;Congratulations, you just pushed your code on GitHub!!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Configuring our development environment</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:8000/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;my_string = 'hi'
 print(my_string)
