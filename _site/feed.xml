@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2021-06-22T14:06:37+03:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Hello World!</title><link href="http://localhost:8000/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;my_string = 'hi'
-print(my_string)
-print(my_string[0])
-print(len(my_string))
-
-print( my_string + &quot;&quot;, &quot;there&quot; )&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The ouput will be:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;hi
-h
-2
-hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Working with strings in python.</summary></entry><entry><title type="html">Introduction to Django</title><link href="http://localhost:8000/jekyll/update/2021/06/21/Introduction-to-Django.html" rel="alternate" type="text/html" title="Introduction to Django" /><published>2021-06-21T13:15:20+03:00</published><updated>2021-06-21T13:15:20+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/21/Introduction-to-Django</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/21/Introduction-to-Django.html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2021-06-22T18:08:42+03:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Part 1: Introduction to Django</title><link href="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html" rel="alternate" type="text/html" title="Part 1: Introduction to Django" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/22/Introduction-to-Django.html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;Django&lt;/a&gt; is free, open-source and relies on Model View Controller (MVC) pattern. Model is the component that contains the Business logic, View contains the User Interface (UI) logic while Controller is the main control component. Django is fast, secure and scalable, hence the phrase “A web framework for perfectionists with deadlines.”&lt;/p&gt;
@@ -40,7 +26,9 @@ hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name><
 python3 -V #To check python version from your terminal (python3)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A &lt;a href=&quot;&amp;quot;https://docs.python.org/3/tutorial/venv.html&amp;quot;&quot;&gt;python virtual environment&lt;/a&gt; allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A &lt;a href=&quot;&amp;quot;https://docs.python.org/3/tutorial/venv.html&amp;quot;&quot;&gt;python virtual environment&lt;/a&gt; allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;We can use &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;pip&lt;/a&gt; to install a virtual environment. &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;Pip&lt;/a&gt; is a package installer for python. In your terminal.&lt;/p&gt;
 
@@ -62,4 +50,22 @@ python3 -V #To check python version from your terminal (python3)
 
 &lt;p&gt;This will create a folder with the name of your project, in our case, Mysite in your current directory. Navigate to your project folder and fire your project.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">DJANGO is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.</summary></entry></feed>
+&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Visit http://127.0.0.1:8000/ to have a view of your first Django project.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You just created your first Django web app.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">DJANGO is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:8000/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>http://localhost:8000/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="http://localhost:8000/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;my_string = 'hi'
+print(my_string)
+print(my_string[0])
+print(len(my_string))
+
+print( my_string + &quot;&quot;, &quot;there&quot; )&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The ouput will be:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;hi
+h
+2
+hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Working with strings in python.</summary></entry></feed>

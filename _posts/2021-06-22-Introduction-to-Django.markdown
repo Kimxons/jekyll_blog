@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Introduction to Django"
-date: 2021-06-21 13:15:20 +0300
+title: "Part 1: Introduction to Django"
+date: 2021-06-22 13:15:20 +0300
 categories: jekyll update
 ---
 
@@ -32,7 +32,7 @@ To check your python installation, open the Terminal and type; for python 2 and 
 
 	python3 -V #To check python version from your terminal (python3)
 
-A [python virtual environment]("https://docs.python.org/3/tutorial/venv.html") allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.
+>A [python virtual environment]("https://docs.python.org/3/tutorial/venv.html") allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.
 
 We can use [pip]("https://pypi.org/project/pip/") to install a virtual environment. [Pip]("https://pypi.org/project/pip/") is a package installer for python. In your terminal.
 
@@ -55,3 +55,7 @@ Let’s create our first Django project.
 This will create a folder with the name of your project, in our case, Mysite in your current directory. Navigate to your project folder and fire your project.
 
 <code>python manage.py runserver</code>
+
+Visit http://127.0.0.1:8000/ to have a view of your first Django project.
+
+Congratulations! You just created your first Django web app.
