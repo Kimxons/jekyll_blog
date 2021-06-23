@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-23T07:39:11+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">The Linux Permissions</title><link href="/jekyll/update/2021/06/23/linux-permisions.html" rel="alternate" type="text/html" title="The Linux Permissions" /><published>2021-06-23T07:20:20+03:00</published><updated>2021-06-23T07:20:20+03:00</updated><id>/jekyll/update/2021/06/23/linux-permisions</id><content type="html" xml:base="/jekyll/update/2021/06/23/linux-permisions.html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-23T08:02:17+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Whatsapp Chatbot in Flask &amp;amp; Twillio</title><link href="/jekyll/update/2021/06/23/whatsapp-chatbot.html" rel="alternate" type="text/html" title="Whatsapp Chatbot in Flask &amp;amp; Twillio" /><published>2021-06-23T07:30:20+03:00</published><updated>2021-06-23T07:30:20+03:00</updated><id>/jekyll/update/2021/06/23/whatsapp-chatbot</id><content type="html" xml:base="/jekyll/update/2021/06/23/whatsapp-chatbot.html">&lt;p&gt;A &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/Chatbot&amp;quot;&quot;&gt;chatbot&lt;/a&gt; is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live &lt;strong&gt;human agent&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s explore how we can build a chatbot for WhatsApp using the &lt;a href=&quot;&amp;quot;https://www.twilio.com/whatsapp&amp;quot;&quot;&gt;Twilio API for WhatsApp&lt;/a&gt; and the &lt;a href=&quot;&amp;quot;https://www.palletsprojects.com/p/flask/&amp;quot;&quot;&gt;Flask framework for Python&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;requirements&quot;&gt;Requirements..?&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Python 3.6 or newer. For Linux users, python is installed by default. Otherwise you can download it from &lt;a href=&quot;&amp;quot;http://python.org&amp;quot;&quot;&gt;python&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ngrok. This helps you connect the flask application running in your machine to a public URL that twilio can connect to. You can get it at &lt;a href=&quot;&amp;quot;https://ngrok.com/download&amp;quot;&quot;&gt;ngrok&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Flask. This is a micro-framework for python. It will help us create a web app that responds to incoming WhatsApp messages. &lt;a href=&quot;&amp;quot;https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask&amp;quot;&quot;&gt;Flask&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a Twilio account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A WhatsApp enabled smartphone.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;setting-up-your-testing-sandbox&quot;&gt;Setting up your Testing Sandbox&lt;/h4&gt;
+
+&lt;p&gt;Twilio provides a &lt;a href=&quot;&amp;quot;https://www.twilio.com/login?g=%2Fconsole%2Fsms%2Fwhatsapp%2Flearn%3F&amp;amp;t=f8ac1360bcde721e2e5d56ee98dc6b802a45b3aaa9b8b32b418cb431010b9d60&amp;quot;&quot;&gt;WhatsApp Sandbox&lt;/a&gt; where you can easily develop and test your web app.&lt;/p&gt;
+
+&lt;p&gt;To connect your smartphone to the sandbox, from your Twilio console, select Programmable sms and then click WhatsApp. The WhatsApp sandbox page displays the sandbox number assigned to your account and a join code.&lt;/p&gt;
+
+&lt;p&gt;To enable the WhatsApp sandbox for your smartphone, send a WhatsApp text with the given code to the sandbox number assigned. You should receive a text from twilio indicating that your mobile number is connected to the sandbox and you can start sending and receiving messages. It’s that simple!&lt;/p&gt;
+
+&lt;h4 id=&quot;lets-prepare-our-environment&quot;&gt;Let’s prepare our environment&lt;/h4&gt;
+
+&lt;p&gt;Open your terminal, create a new directory for  your project and navigate into the directory. Create a virtual environment and activate your environment. Install Twilio and Flask and requests. pip is a python package installer&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$ mkdir whatsapp-chatbot&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$ cd whatsapp-chatbot&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$ virtualenv&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$ source /bin/activate&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(name-of-env) $ pip install twilio flask requests&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Test whether your installations of flask is working.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
+app = Flask(__name__)
+
+@app.route(&quot;/&quot;)
+def hello():
+return &quot;Hello World!&quot;
+
+if __name__ == &quot;__main__&quot;:
+app.run(debug=True)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To run&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python(v) run.py 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;lets-create-our-chatbot&quot;&gt;Let’s create our chatbot,&lt;/h4&gt;
+
+&lt;p&gt;Let’s code a little bit!&lt;/p&gt;
+
+&lt;p&gt;The chatbot will recognize anything that has the word “quote” and respond to it otherwise it will return an error text.&lt;/p&gt;
+
+&lt;h4 id=&quot;create-a-webhook&quot;&gt;Create a Webhook&lt;/h4&gt;
+
+&lt;p&gt;The Twilio API for WhatsApp uses a webhook to notify an app when there is an incoming text message. Flask makes it easy to create a webhook.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
+app = Flask(__name__)
+@app.route(&quot;/&quot;, methods=[&quot;POST&quot;])
+    def index():
+    #add your webhook logic here and return a response
+if __name__=='__main__':
+    app.run()	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We have defined a / endpoint that listens only to POST requests. This endpoint is invoked every time an incoming message from a user is received by Twilio.&lt;/p&gt;
+
+&lt;p&gt;The logic defined in our function index() will analyze messages sent by the user and return the appropriate response, in our case, a random quote or an error text.&lt;/p&gt;
+
+&lt;h4 id=&quot;getting-messages-and--responses&quot;&gt;Getting Messages And  Responses&lt;/h4&gt;
+
+&lt;p&gt;We need to obtain the text send by the user.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import request
+new_msg = request.values.get('Body', '').lower()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Twilio expects a response in &lt;a href=&quot;&amp;quot;https://www.twilio.com/docs/glossary/what-is-twilio-markup-language-twiml&amp;quot;&quot;&gt;Twilio Markup Language&lt;/a&gt;, which is XML-based.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from twilio.twiml.messaging_response import MessagingResponse
+
+resposnse = MessagingResponse()
+msg = response.message()
+msg.boby('some text')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;lets-build-our-chatbot-logic&quot;&gt;Let’s build our chatbot logic&lt;/h4&gt;
+
+&lt;p&gt;We search the incoming text for the keyword “quote”, then return a response&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;responnded = False
+if &quot;quote&quot; in new_msg:
+#quote response
+responded = True
+else:
+#add error message to be displayed
+if not responded:
+#a text to be returned as response
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run your chatbot&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(name-of-env) $ python app.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The service is running on your laptop. We need to expose it. To do this, we use ngrok.&lt;/p&gt;
+
+&lt;p&gt;Open your terminal and run; Since our app is running on port 5000; Our HTTP requests will be redirected to the temporary domain created.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ngrok http 5000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;On the Twilio console, click Programmable SMS, then WhatsApp and then the sandbox. Copy the URL from ngrok output and paste it in the sandbox.&lt;/p&gt;
+
+&lt;p&gt;You are good to go. Send messages from your smartphone and enjoy!!&lt;/p&gt;
+
+&lt;p&gt;You can find all the code for this article on: &lt;a href=&quot;&amp;quot;https://github.com/Kimxons/whatsapp_chatbot&amp;quot;&quot;&gt;Chatbot Tutorial code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Incase of any queries, kindly hit me up on &lt;a href=&quot;&amp;quot;twitter.com/mishaelkimxons&amp;quot;&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;&amp;quot;github.com/kimxons&amp;quot;&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">A chatbot is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live human agent.</summary></entry><entry><title type="html">The Linux Permissions</title><link href="/jekyll/update/2021/06/23/linux-permisions.html" rel="alternate" type="text/html" title="The Linux Permissions" /><published>2021-06-23T07:20:20+03:00</published><updated>2021-06-23T07:20:20+03:00</updated><id>/jekyll/update/2021/06/23/linux-permisions</id><content type="html" xml:base="/jekyll/update/2021/06/23/linux-permisions.html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
 
 &lt;h4&gt;Linux File Permissions&lt;/h4&gt;
 
