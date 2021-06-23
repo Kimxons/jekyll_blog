@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django Admin"
+title:  "The Django Admin"
 date:   2021-06-23 07:10:19 +0300
 categories: jekyll update
 ---
