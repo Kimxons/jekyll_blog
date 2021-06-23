@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-23T07:32:24+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">The Django Admin</title><link href="/jekyll/update/2021/06/23/django-admin.html" rel="alternate" type="text/html" title="The Django Admin" /><published>2021-06-23T07:10:19+03:00</published><updated>2021-06-23T07:10:19+03:00</updated><id>/jekyll/update/2021/06/23/django-admin</id><content type="html" xml:base="/jekyll/update/2021/06/23/django-admin.html">&lt;p&gt;In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-23T07:39:11+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">The Linux Permissions</title><link href="/jekyll/update/2021/06/23/linux-permisions.html" rel="alternate" type="text/html" title="The Linux Permissions" /><published>2021-06-23T07:20:20+03:00</published><updated>2021-06-23T07:20:20+03:00</updated><id>/jekyll/update/2021/06/23/linux-permisions</id><content type="html" xml:base="/jekyll/update/2021/06/23/linux-permisions.html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
+
+&lt;h4&gt;Linux File Permissions&lt;/h4&gt;
+
+&lt;p&gt;Linux inherited the Unix model of file Ownership and Permissions. These Permissions specify who has access to what and what they are allowed to perform with the given file or directory.&lt;/p&gt;
+
+&lt;p&gt;The Permissions includes: Read, Write, and Execute. A Read permissions on a file or directory enables a user to bread the contents of the given file or directory. A Write permission enables a user to modify the contents of a file or delete the file or directory. An execute permission allows a user to execute the file (run a file as an executable file).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -l 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command (in your terminal enables a user to view the permissions of a given file or directory. The output might look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;drwxr-xr-x 
+-rw-rw-r--
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should note that the first character indicates whether the item in question is a directory or a file. The “d” in our first oupt indicates that the item is a directory whereas the dash implies that the item is a file. The next three characters that follow shows the permissions of the owner of the given file, with R representing Read, W for Write and X for eXecute. Notably, a dash indicates the lack of a permission.&lt;/p&gt;
+
+&lt;p&gt;The ‘chmod’ command allows a user to change the permissions of a file. The ownership flags u, g, and o for User, owner Group, and Others respectively. The general look of the chmod command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod (ownership flag+permission flag) filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Example: To add execution permissions for a user.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod u+x filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To add execute commands for everyone:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also revoke permissions from a file using the chmod command.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod -x filepath
+
+asdfgh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The ‘chown’ command can change the ownership of a file or a directory.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chown user filepath or chown user:group filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The ‘chgrp’ command can change the group ownership&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chrgrp group filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To change group-owner only, use this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chgrp group_name filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.</summary></entry><entry><title type="html">The Django Admin</title><link href="/jekyll/update/2021/06/23/django-admin.html" rel="alternate" type="text/html" title="The Django Admin" /><published>2021-06-23T07:10:19+03:00</published><updated>2021-06-23T07:10:19+03:00</updated><id>/jekyll/update/2021/06/23/django-admin</id><content type="html" xml:base="/jekyll/update/2021/06/23/django-admin.html">&lt;p&gt;In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.&lt;/p&gt;
 
 &lt;p&gt;We need to run migrations first in order to be able to create our admin user.&lt;/p&gt;
 
