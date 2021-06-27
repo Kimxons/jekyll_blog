@@ -7,7 +7,8 @@ categories: jekyll update
 
 Hello pals. Welcome to my blog once again. 
 Lets do some simple smart contract in solidity. 
-The smart contract will enable us store and retrieve a number from the blockchain.
+
+Here is a simple contract that you can store, and retrieve a number in this contract.
 
 	// SPDX-License-Identifier: GPL-3.0
 
