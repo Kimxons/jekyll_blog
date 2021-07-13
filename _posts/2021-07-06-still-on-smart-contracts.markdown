@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simple Token"
+title:  "Noob Token"
 date:   2021-07-06 00:26:19 +0300
 categories: jekyll update
 ---
