@@ -12,3 +12,5 @@ Hello Noob, Welcome to my world!
 print("Hello Noob, Welcome to my world!")
 
 {% endhighlight %}
+
+This is a no-brainer though. lol
