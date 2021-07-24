@@ -5,8 +5,6 @@ date: 2021-07-24 15:45:25 +0300
 categories: jekyll update
 ---
 
-## Inheritance in Solidity
-
 Inheritance consists of the word “Inherit”, which means “To Derive”. 
 
 So, Inheritance is defined as one class’s tendency to derive properties and characteristics from other classes. 
@@ -30,18 +28,15 @@ NB: The order of inheritance is very important.
     The parent contracts must be listed in the order "most base-like" to "most derived".  
 
 
-    // SPDX-License-Identifier: MIT
-    
-    pragma solidity ^0.7.6;
+#### Basic Graph of inheritance
 
-    /* Graph of inheritance
         A
        / \
       B   C
      / \ /
     F  D,E
 
-    */
+Remember to include License and solidity versions used
 
     contract A {
         function foo() public pure virtual returns (string memory) {
@@ -49,7 +44,8 @@ NB: The order of inheritance is very important.
         }
     }
 
-    // Contracts inherit other contracts by using the keyword 'is'.
+Contracts inherit other contracts by using the keyword 'is'. See below code. 
+    
     contract B is A {
         // Override A.foo()
         function foo() public pure virtual override returns (string memory) {
@@ -67,7 +63,7 @@ NB: The order of inheritance is very important.
 Solidity supports multiple inheritance, i.e Contracts can inherit from multiple parent contracts.
 
 When a function is called that is defined multiple times in different contracts, parent contracts are searched from
-right to left, and in depth-first manner.
+right to left, and in depth-first (DFS) manner.
 
 #### Example of multiple inheritance
 
@@ -99,3 +95,5 @@ Swapping the order of A and B will throw a compilation error.
             return super.foo();
         }
     }
+
+Happy coding n00bs <(..)>
