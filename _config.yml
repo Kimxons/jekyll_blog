@@ -1,7 +1,7 @@
 title: My Random Thoughts - A home for Meshack's random thoughts
 name: My Random Thoughts
 description: A home for meshack's random thoughts. n<00>bs
-baseurl: "https://kimxons.github.io" 
+baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
   # Build settings
