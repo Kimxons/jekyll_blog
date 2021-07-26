@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kimxons.github.io/sitemap.xml
