@@ -1,25 +1,23 @@
 ---
 permalink: /404.html
-layout: default
+layout: minimal
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found! :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="container text-center">
+  <h1 class="header-404">404</h1>
+  <p><strong>We couldn't find that :(</strong></p>
+  <p>Maybe you were looking for one of these pages?</p>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card card-list">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="/"><i class="fas fa-home"></i> Back to our Homepage</a></li>
+          <li class="list-group-item"><a href="/providers/"><i class="fas fa-server"></i> Privacy Focused Service Providers</a></li>
+          <li class="list-group-item"><a href="/browsers/"><i class="fas fa-compass"></i> Privacy Protecting Web Browsers</a></li>
+          <li class="list-group-item"><a href="/software/"><i class="fas fa-window-restore"></i> Privacy-Centric Software</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="text-danger text-center"><i class="fas fa-exclamation-circle"></i> If you believe you reached this page in error, please <a href="/contact/">contact us</a>!</p>
 </div>
