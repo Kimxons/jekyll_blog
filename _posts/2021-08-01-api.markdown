@@ -7,15 +7,19 @@ categories: jekyll update
 
 If you have been a regular computer user, prrobably you have heard of an API. 
 
-An API exposes the functionality without exposing the internals. 
+An API exposes the functionality without exposing the internals.
 
-Taking on functions or methods, they work the same as an API. 
+Taking on functions or methods, they work the same as an API.
 
-Let's take an example of a javascript function. 
+Let's take an example of a javascript function.
 
 	function add(num1, num2){
 		return a+b;
 	}
+
+    add (2+3); // call the function
+
+Calling the function, example, with 2 and 3 respectively will return 5.
 
 This is a simple js function that receives two numbers (num1 and num2) as parameters, it adds the two numbers and returns their sum. 
 
