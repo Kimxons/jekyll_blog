@@ -7,7 +7,9 @@ categories: jekyll update
 
 If you have been a regular computer user, prrobably you have heard of an API. 
 
-An API exposes the functionality without exposing the internals.
+An API exposes the functionality without exposing the internals. An API enables companies to open up their applications' data and functionality to external third-party developers,
+business partners, and internal departments within their company. This allows services and products to communicate with each other through a documented interface. 
+Developers do not need to know how the API is implemented; they simply use the interface to communicate with other products and services. 
 
 Taking on functions or methods, they work the same as an API.
 
