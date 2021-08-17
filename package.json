@@ -1,0 +1,13 @@
+{
+  "name": "meshackkimwele.com",
+  "version": "1.0.0",
+  "description": "Blog, personal project and more ...",
+  "dependencies": {
+    "mz": "^2.7.0",
+    "puppeteer": "^1.20.0",
+    "resemblejs": "^3.2.2"
+  },
+  "scripts": {
+    "capture": "node scripts/capture.js"
+  }
+}
