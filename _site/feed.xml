@@ -1,71 +1,324 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-28T07:50:39+03:00</updated><id>/feed.xml</id><title type="html">Random Thoughts</title><subtitle>A home for meshack's random thoughts. License: WTFPL – Do What the Fuck You Want to Public License</subtitle><entry><title type="html">Sample Token</title><link href="/jekyll/update/2021/06/28/SampleToken.html" rel="alternate" type="text/html" title="Sample Token" /><published>2021-06-28T07:46:30+03:00</published><updated>2021-06-28T07:46:30+03:00</updated><id>/jekyll/update/2021/06/28/SampleToken</id><content type="html" xml:base="/jekyll/update/2021/06/28/SampleToken.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pragma solidity ^0.7.0;
+<?xml version="1.0" encoding="utf-8"?>
 
-import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.2.0-solc-0.7/contracts/token/ERC20/ERC20.sol';
+<feed xmlns="https://www.w3.org./2005/Atom">
+    <title>Meshack K. Kimwele</title>
+    <link href="http://localhost:4000/atom.xml" rel="self"/>
+    <link href="http://localhost:4000"/>
+    <updated>2021-08-18T00:48:10+03:00</updated>
+    <id>http://localhost:4000</id>
+    <author>
+        <name>Meshack Kimwele</name>
+    </author>
 
-// This ERC-20 contract mints the specified amount of tokens to the contract creator.
-contract FunToken is ERC20 {
-  constructor(uint256 initialSupply) ERC20(&quot;FunToken&quot;, &quot;FUT&quot;) {
-    _mint(msg.sender, initialSupply);
-  }
+    
+    <entry>
+        <title>Application Programming Interface (API)</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-08-01 22:40:19 +0300</updated>
+        <id>http://localhost:4000/api</id>
+        <content type="html">&lt;p&gt;If you have been a regular computer user, prrobably you have heard of an API.&lt;/p&gt;
+
+&lt;p&gt;An API exposes the functionality without exposing the internals. An API enables companies to open up their applications’ data and functionality to external third-party developers,
+business partners, and internal departments within their company. This allows services and products to communicate with each other through a documented interface. 
+Developers do not need to know how the API is implemented; they simply use the interface to communicate with other products and services.&lt;/p&gt;
+
+&lt;p&gt;Taking on functions or methods, they work the same as an API.&lt;/p&gt;
+
+&lt;p&gt;Let’s take an example of a javascript function.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function add(num1, num2){
+	return a+b;
+}
+
+add (2+3); // call the function
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Calling the function, example, with 2 and 3 respectively will return 5.&lt;/p&gt;
+
+&lt;p&gt;This is a simple js function that receives two numbers (num1 and num2) as parameters, it adds the two numbers and returns their sum.&lt;/p&gt;
+
+&lt;p&gt;As the function user, you just call the function with the two numbers and you don’t have to worry about how the function is doing what it does. You appreciate the outcome but not how exactly the function gets the desired answer.&lt;/p&gt;
+
+&lt;p&gt;That’s all an API does/is. An API could be a function you wrote, a function from a library or method from a freamework or even an http endpoint.&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Inheritance in Solidity</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-07-24 15:45:25 +0300</updated>
+        <id>http://localhost:4000/inheritance-in-solidity</id>
+        <content type="html">&lt;p&gt;Inheritance consists of the word “Inherit”, which means “To Derive”.&lt;/p&gt;
+
+&lt;p&gt;So, Inheritance is defined as one class’s tendency to derive properties and characteristics from other classes.&lt;/p&gt;
+
+&lt;p&gt;It provides additional functionalities to extract features from the base class and imply it into other derived classes significantly.&lt;/p&gt;
+
+&lt;p&gt;Inheritance is an eminent concept in Object Oriented Programming (OOP) Paradigm. 
+It provides aj mechanism to establish relationships and build hierarchies of class
+im object composition.&lt;/p&gt;
+
+&lt;p&gt;Practically, The functions and methods defined in one class may be used in manipulating other data members of the class.&lt;/p&gt;
+
+&lt;p&gt;Contracts easily inherit other contracts by using the &lt;mark&gt;is&lt;/mark&gt; keyword.&lt;/p&gt;
+
+&lt;p&gt;Function that is going to be overriden by the child contract must be declared as &lt;mark&gt;virtual&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;The function that is going to override the parent function must therefore use the keyword &lt;mark&gt;override&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;NB: The order of inheritance is very important.
+    The parent contracts must be listed in the order “most base-like” to “most derived”.&lt;/p&gt;
+
+&lt;h4 id=&quot;basic-graph-of-inheritance&quot;&gt;Basic Graph of inheritance&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    A
+   / \
+  B   C
+ / \ /
+F  D,E
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Remember to include License and solidity versions used&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;contract A {
+    function foo() public pure virtual returns (string memory) {
+        return &quot;A&quot;;
+    }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This is a simple ERC-20 contract based on the current Open Zeppelin ERC-20 template. It creates FunToken with symbol FUT and mints the entirety of the initial supply to the creator of the contract.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">pragma solidity ^0.7.0;</summary></entry><entry><title type="html">Simple Solidity Contract</title><link href="/jekyll/update/2021/06/27/simple-contract.html" rel="alternate" type="text/html" title="Simple Solidity Contract" /><published>2021-06-27T09:04:30+03:00</published><updated>2021-06-27T09:04:30+03:00</updated><id>/jekyll/update/2021/06/27/simple-contract</id><content type="html" xml:base="/jekyll/update/2021/06/27/simple-contract.html">&lt;p&gt;Hello pals. Welcome to my blog once again. 
-Lets do some simple smart contract in solidity.&lt;/p&gt;
+&lt;p&gt;Contracts inherit other contracts by using the keyword ‘is’. See below code.&lt;/p&gt;
 
-&lt;p&gt;Here is a simple contract that you can store, and retrieve a number in this contract.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;contract B is A {
+    // Override A.foo()
+    function foo() public pure virtual override returns (string memory) {
+        return &quot;B&quot;;
+    }
+}
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// SPDX-License-Identifier: GPL-3.0
+contract C is A {
+    // Override A.foo()
+    function foo() public pure virtual override returns (string memory) {
+        return &quot;C&quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-pragma solidity ^0.5.0;
+&lt;p&gt;Solidity supports multiple inheritance, i.e Contracts can inherit from multiple parent contracts.&lt;/p&gt;
+
+&lt;p&gt;When a function is called that is defined multiple times in different contracts, parent contracts are searched from
+right to left, and in depth-first (DFS) manner.&lt;/p&gt;
+
+&lt;h4 id=&quot;example-of-multiple-inheritance&quot;&gt;Example of multiple inheritance&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;contract D is B, C {
+    // D.foo() returns &quot;C&quot;
+    // since C is the right most parent contract with function foo()
+    function foo() public pure override(B, C) returns (string memory) {
+        return super.foo();
+    }
+}
+
+contract E is C, B {
+    // E.foo() returns &quot;B&quot;
+    // since B is the right most parent contract with function foo()
+    function foo() public pure override(C, B) returns (string memory) {
+        return super.foo();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Inheritance must be ordered from “most base-like” to “most derived”.&lt;/p&gt;
+
+&lt;p&gt;Swapping the order of A and B will throw a compilation error.&lt;/p&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;contract F is A, B {
+    function foo() public pure override(A, B) returns (string memory) {
+        return super.foo();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Happy coding n00bs &amp;lt;(..)&amp;gt;&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Noob Token</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-07-06 00:26:19 +0300</updated>
+        <id>http://localhost:4000/still-on-smart-contracts</id>
+        <content type="html">&lt;h2 id=&quot;not-perfect-yet&quot;&gt;Not perfect yet&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity 0.6.9;
+pragma experimental ABIEncoderV2;
+
+library SafeMath {
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        if (a == 0) {
+            return 0;
+        }
+        uint256 c = a * b;
+        assert(c / a == b);
+        return c;
+    }
+
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        // assert(b &amp;gt; 0); // Solidity automatically throws when dividing by 0
+        uint256 c = a / b;
+        // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+        return c;
+    }
+
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        assert(b &amp;lt;= a);
+        return a - b;
+    }
+
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        assert(c &amp;gt;= a);
+        return c;
+    }
+}
+
+contract NoobToken {
+    using SafeMath for uint256;
+
+    string public symbol = &quot;NOOB&quot;;
+    string public name = &quot;NOOB Token&quot;;
+
+    uint256 public decimals = 18;
+    uint256 public totalSupply = 1000000000 * 10**18; // 1 Billion
+
+    mapping(address =&amp;gt; uint256) internal balances;
+    mapping(address =&amp;gt; mapping(address =&amp;gt; uint256)) internal allowed;
+
+    // ============ Events ============
+
+    event Transfer(address indexed from, address indexed to, uint256 amount);
+
+    event Approval(address indexed owner, address indexed spender, uint256 amount);
+
+    // ============ Functions ============
+
+    constructor() public {
+        balances[msg.sender] = totalSupply;
+}
 
 /**
- * @title Storage
- * @dev Store &amp;amp; retrieve value in a variable
+ * @dev transfer token for a specified address
+ * @param to The address to transfer to.
+ * @param amount The amount to be transferred.
  */
-contract Storage {
+function transfer(address to, uint256 amount) public returns (bool) {
+    require(amount &amp;lt;= balances[msg.sender], &quot;BALANCE_NOT_ENOUGH&quot;);
 
-    uint256 number;
-
-    /**
-     * @dev Store value in variable
-     * @param num value to store
-     */
-    function store(uint256 num) public {
-        number = num;
+    balances[msg.sender] = balances[msg.sender].sub(amount);
+    balances[to] = balances[to].add(amount);
+    emit Transfer(msg.sender, to, amount);
+    return true;
     }
 
     /**
-     * @dev Return value 
-     * @return value of 'number'
+     * @dev Gets the balance of the specified address.
+     * @param owner The address to query the the balance of.
+     * @return balance An uint256 representing the amount owned by the passed address.
      */
-    function retrieve() public view returns (uint256){
-        return number;
+    function balanceOf(address owner) external view returns (uint256 balance) {
+        return balances[owner];
+    }
+
+    /**
+     * @dev Transfer tokens from one address to another
+     * @param from address The address which you want to send tokens from
+     * @param to address The address which you want to transfer to
+     * @param amount uint256 the amount of tokens to be transferred
+     */
+    function transferFrom(
+        address from,
+        address to,
+        uint256 amount
+    ) public returns (bool) {
+        require(amount &amp;lt;= balances[from], &quot;BALANCE_NOT_ENOUGH&quot;);
+        require(amount &amp;lt;= allowed[from][msg.sender], &quot;ALLOWANCE_NOT_ENOUGH&quot;);
+
+        balances[from] = balances[from].sub(amount);
+        balances[to] = balances[to].add(amount);
+        allowed[from][msg.sender] = allowed[from][msg.sender].sub(amount);
+        emit Transfer(from, to, amount);
+        return true;
+    }
+
+    /**
+     * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
+     * @param spender The address which will spend the funds.
+     * @param amount The amount of tokens to be spent.
+     */
+    function approve(address spender, uint256 amount) public returns (bool) {
+        allowed[msg.sender][spender] = amount;
+        emit Approval(msg.sender, spender, amount);
+        return true;
+    }
+
+    /**
+     * @dev Function to check the amount of tokens that an owner allowed to a spender.
+     * @param owner address The address which owns the funds.
+     * @param spender address The address which will spend the funds.
+     * @return A uint256 specifying the amount of tokens still available for the spender.
+     */
+    function allowance(address owner, address spender) public view returns (uint256) {
+        return allowed[owner][spender];
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Sample Token</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-28 07:46:30 +0300</updated>
+        <id>http://localhost:4000/SampleToken</id>
+        <content type="html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;The first line in our smart contract in solidity shows the licensing of the source code. You can notice that the licensing of the source code follows the GPL version 3.0. It is important to focus on machine-readable license specifiers in an environment that allows the default publication of source code. 
-There are number of &lt;mark&gt;licenses&lt;/mark&gt; out there; //SPDX-License-Identifier: GPL-3.0 is one of them though.&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.2.0-solc-0.7/contracts/token/ERC20/ERC20.sol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;&lt;mark&gt;pragma&lt;/mark&gt; specifies the compiler version of Solidity. This line shows that the source code is compatible with Solidity version 0.5.0 or newer versions of the language. (pragma solidity ^0.5.0)&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;// This ERC-20 contract mints the specified amount of tokens to the contract creator.
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FunToken&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ERC20&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint256&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialSupply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ERC20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;FunToken&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;FUT&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;_mint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialSupply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Solidity offers profound support for C-type and C++-type comments. Therefore, any type of text between the characters ‘/&lt;em&gt;’ and ‘&lt;/em&gt;/’ is referred to as a comment which could span multiple lines. In addition, any type of text found between the ‘//’ and the end of a line is referred to as a comment, and most importantly, the Solidity compiler ignores the text. Here is an example that can outline the ideal use of comments.&lt;/p&gt;
+&lt;p&gt;This is a simple ERC-20 contract based on the current Open Zeppelin ERC-20 template. It creates FunToken with symbol FUT and mints the entirety of the initial supply to the creator of the contract.&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Helo Noob</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-25 07:30:20 +0300</updated>
+        <id>http://localhost:4000/noob</id>
+        <content type="html">&lt;p&gt;Hello Noob, Welcome to my world!&lt;/p&gt;
 
-&lt;h3 id=&quot;decoding-our-smart-contract&quot;&gt;Decoding our smart contract&lt;/h3&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;print(&quot;Hello Noob, Welcome to my world!&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;TODO –&lt;/p&gt;
-
-&lt;p&gt;You can try it on &lt;a href=&quot;&amp;quot;https://remix.ethereum.org/&amp;quot;&quot;&gt;remix&lt;/a&gt;.
-Make sure you have added metamask extension to your brwoser and created an account. Connect your metamask and deploy your contract to the blockchain.&lt;/p&gt;
-
-&lt;p&gt;You can then interact with your contract.&lt;/p&gt;
-
-&lt;p&gt;Yeyy!&lt;/p&gt;
-
-&lt;p&gt;Its that simple noobs.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Hello pals. Welcome to my blog once again. Lets do some simple smart contract in solidity.</summary></entry><entry><title type="html">Helo Noob</title><link href="/jekyll/update/2021/06/25/noob.html" rel="alternate" type="text/html" title="Helo Noob" /><published>2021-06-25T07:30:20+03:00</published><updated>2021-06-25T07:30:20+03:00</updated><id>/jekyll/update/2021/06/25/noob</id><content type="html" xml:base="/jekyll/update/2021/06/25/noob.html">&lt;p&gt;Hello Noob, Welcome to my world!&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;print(&quot;Hello Noob, Welcome to my world!&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Hello Noob, Welcome to my world!</summary></entry><entry><title type="html">Whatsapp Chatbot in Flask &amp;amp; Twillio</title><link href="/jekyll/update/2021/06/23/whatsapp-chatbot.html" rel="alternate" type="text/html" title="Whatsapp Chatbot in Flask &amp;amp; Twillio" /><published>2021-06-23T07:30:20+03:00</published><updated>2021-06-23T07:30:20+03:00</updated><id>/jekyll/update/2021/06/23/whatsapp-chatbot</id><content type="html" xml:base="/jekyll/update/2021/06/23/whatsapp-chatbot.html">&lt;p&gt;A &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/Chatbot&amp;quot;&quot;&gt;chatbot&lt;/a&gt; is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live &lt;strong&gt;human agent&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is a no-brainer though. lol&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Whatsapp Chatbot in Flask & Twillio</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-23 07:30:20 +0300</updated>
+        <id>http://localhost:4000/whatsapp-chatbot</id>
+        <content type="html">&lt;p&gt;A &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/Chatbot&amp;quot;&quot;&gt;chatbot&lt;/a&gt; is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live &lt;strong&gt;human agent&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Let’s explore how we can build a chatbot for WhatsApp using the &lt;a href=&quot;&amp;quot;https://www.twilio.com/whatsapp&amp;quot;&quot;&gt;Twilio API for WhatsApp&lt;/a&gt; and the &lt;a href=&quot;&amp;quot;https://www.palletsprojects.com/p/flask/&amp;quot;&quot;&gt;Flask framework for Python&lt;/a&gt;.&lt;/p&gt;
 
@@ -121,7 +374,7 @@ Make sure you have added metamask extension to your brwoser and created an accou
 
 &lt;p&gt;Test whether your installations of flask is working.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
 app = Flask(__name__)
 
 @app.route(&quot;/&quot;)
@@ -134,7 +387,7 @@ app.run(debug=True)
 
 &lt;p&gt;To run&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python(v) run.py 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python(v) run.py 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;lets-create-our-chatbot&quot;&gt;Let’s create our chatbot,&lt;/h4&gt;
@@ -147,7 +400,7 @@ app.run(debug=True)
 
 &lt;p&gt;The Twilio API for WhatsApp uses a webhook to notify an app when there is an incoming text message. Flask makes it easy to create a webhook.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
 app = Flask(__name__)
 @app.route(&quot;/&quot;, methods=[&quot;POST&quot;])
     def index():
@@ -164,13 +417,13 @@ if __name__=='__main__':
 
 &lt;p&gt;We need to obtain the text send by the user.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import request
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import request
 new_msg = request.values.get('Body', '').lower()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Twilio expects a response in &lt;a href=&quot;&amp;quot;https://www.twilio.com/docs/glossary/what-is-twilio-markup-language-twiml&amp;quot;&quot;&gt;Twilio Markup Language&lt;/a&gt;, which is XML-based.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from twilio.twiml.messaging_response import MessagingResponse
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from twilio.twiml.messaging_response import MessagingResponse
 
 resposnse = MessagingResponse()
 msg = response.message()
@@ -181,7 +434,7 @@ msg.boby('some text')
 
 &lt;p&gt;We search the incoming text for the keyword “quote”, then return a response&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;responnded = False
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;responnded = False
 if &quot;quote&quot; in new_msg:
 #quote response
 responded = True
@@ -193,14 +446,14 @@ if not responded:
 
 &lt;p&gt;Run your chatbot&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(name-of-env) $ python app.py
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(name-of-env) $ python app.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The service is running on your laptop. We need to expose it. To do this, we use ngrok.&lt;/p&gt;
 
 &lt;p&gt;Open your terminal and run; Since our app is running on port 5000; Our HTTP requests will be redirected to the temporary domain created.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ngrok http 5000
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ngrok http 5000
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;On the Twilio console, click Programmable SMS, then WhatsApp and then the sandbox. Copy the URL from ngrok output and paste it in the sandbox.&lt;/p&gt;
@@ -209,7 +462,16 @@ if not responded:
 
 &lt;p&gt;You can find all the code for this article on: &lt;a href=&quot;&amp;quot;https://github.com/Kimxons/whatsapp_chatbot&amp;quot;&quot;&gt;Chatbot Tutorial code&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Incase of any queries, kindly hit me up on &lt;a href=&quot;&amp;quot;twitter.com/mishaelkimxons&amp;quot;&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;&amp;quot;github.com/kimxons&amp;quot;&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">A chatbot is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live human agent.</summary></entry><entry><title type="html">The Linux Permissions</title><link href="/jekyll/update/2021/06/23/linux-permisions.html" rel="alternate" type="text/html" title="The Linux Permissions" /><published>2021-06-23T07:20:20+03:00</published><updated>2021-06-23T07:20:20+03:00</updated><id>/jekyll/update/2021/06/23/linux-permisions</id><content type="html" xml:base="/jekyll/update/2021/06/23/linux-permisions.html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
+&lt;p&gt;Incase of any queries, kindly hit me up on &lt;a href=&quot;&amp;quot;twitter.com/mishaelkimxons&amp;quot;&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;&amp;quot;github.com/kimxons&amp;quot;&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>The Linux Permissions</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-23 07:20:20 +0300</updated>
+        <id>http://localhost:4000/linux-permisions</id>
+        <content type="html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
 
 &lt;h4&gt;Linux File Permissions&lt;/h4&gt;
 
@@ -217,12 +479,12 @@ if not responded:
 
 &lt;p&gt;The Permissions includes: Read, Write, and Execute. A Read permissions on a file or directory enables a user to bread the contents of the given file or directory. A Write permission enables a user to modify the contents of a file or delete the file or directory. An execute permission allows a user to execute the file (run a file as an executable file).&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -l 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -l 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command (in your terminal enables a user to view the permissions of a given file or directory. The output might look like this:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;drwxr-xr-x 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;drwxr-xr-x 
 -rw-rw-r--
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -230,40 +492,49 @@ if not responded:
 
 &lt;p&gt;The ‘chmod’ command allows a user to change the permissions of a file. The ownership flags u, g, and o for User, owner Group, and Others respectively. The general look of the chmod command:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod (ownership flag+permission flag) filepath
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod (ownership flag+permission flag) filepath
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Example: To add execution permissions for a user.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod u+x filepath
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod u+x filepath
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To add execute commands for everyone:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x filepath
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x filepath
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can also revoke permissions from a file using the chmod command.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod -x filepath
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod -x filepath
 
 asdfgh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The ‘chown’ command can change the ownership of a file or a directory.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chown user filepath or chown user:group filepath
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chown user filepath or chown user:group filepath
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The ‘chgrp’ command can change the group ownership&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chrgrp group filename
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chrgrp group filename
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To change group-owner only, use this command:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chgrp group_name filepath
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.</summary></entry><entry><title type="html">The Django Admin</title><link href="/jekyll/update/2021/06/23/django-admin.html" rel="alternate" type="text/html" title="The Django Admin" /><published>2021-06-23T07:10:19+03:00</published><updated>2021-06-23T07:10:19+03:00</updated><id>/jekyll/update/2021/06/23/django-admin</id><content type="html" xml:base="/jekyll/update/2021/06/23/django-admin.html">&lt;p&gt;In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chgrp group_name filepath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>The Django Admin</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-23 07:10:19 +0300</updated>
+        <id>http://localhost:4000/django-admin</id>
+        <content type="html">&lt;p&gt;In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.&lt;/p&gt;
 
 &lt;p&gt;We need to run migrations first in order to be able to create our admin user.&lt;/p&gt;
 
@@ -271,12 +542,12 @@ asdfgh
   &lt;p&gt;&lt;a href=&quot;&amp;quot;https://docs.djangoproject.com/en/3.1/topics/migrations/&amp;quot;&quot;&gt;Migrations&lt;/a&gt; are Django’s way of propagating changes that you make to your models e.g adding fields into your database schema.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python manage.py migrate
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see this output in your terminal;&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Operations to perform:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Operations to perform:
 
 Apply all migrations: admin, auth, contenttypes, sessions
 
@@ -296,12 +567,12 @@ Applying admin.0002_logentry_remove_auto_add... OK
 
 &lt;p&gt;Let’s now create our admin user;&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python manage.py createsuperuser
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python manage.py createsuperuser
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should get this output in your terminal:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user:~/dir-to-project$ python manage.py createsuperuser
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user:~/dir-to-project$ python manage.py createsuperuser
 
 Username (leave blank to use 'user'):
 
@@ -320,63 +591,16 @@ Superuser created successfully.
 
 &lt;p&gt;This is the place where you interact with your models via an actual interface; you can modify, add, delete entries for your registered models. You can notice that we have two models: Groups and Users.&lt;/p&gt;
 
-&lt;p&gt;&lt;mark&gt;Happy Coding!&lt;/mark&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.</summary></entry><entry><title type="html">Part 1: Introduction to Django</title><link href="/jekyll/update/2021/06/22/Introduction-to-Django.html" rel="alternate" type="text/html" title="Part 1: Introduction to Django" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>/jekyll/update/2021/06/22/Introduction-to-Django</id><content type="html" xml:base="/jekyll/update/2021/06/22/Introduction-to-Django.html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;Django&lt;/a&gt; is free, open-source and relies on Model View Controller (MVC) pattern. Model is the component that contains the Business logic, View contains the User Interface (UI) logic while Controller is the main control component. Django is fast, secure and scalable, hence the phrase “A web framework for perfectionists with deadlines.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You can check out &lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;official Django documentation&lt;/a&gt; for more information.&lt;/p&gt;
-
-&lt;header&gt;
-	Prerequisites
-&lt;/header&gt;
-&lt;main&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Python (preferably Python3)&lt;/li&gt;
-		&lt;li&gt;A Virtual environment&lt;/li&gt;
-		&lt;li&gt;Django&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/main&gt;
-
-&lt;p&gt;Python comes pre-installed on Linux. If you are using windows, you need to download and install python from &lt;a href=&quot;&amp;quot;https://www.python.org/downloads/windows/&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To check your python installation, open the Terminal and type; for python 2 and python3 respectively.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python -V #To check python version from your terminal(python2)
-
-python3 -V #To check python version from your terminal (python3)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A &lt;a href=&quot;&amp;quot;https://docs.python.org/3/tutorial/venv.html&amp;quot;&quot;&gt;python virtual environment&lt;/a&gt; allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We can use &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;pip&lt;/a&gt; to install a virtual environment. &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;Pip&lt;/a&gt; is a package installer for python. In your terminal.&lt;/p&gt;
-
-&lt;p&gt;Pip installation - &lt;code&gt;pip install pip&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;To install virtual environments - &lt;code&gt;pip install virtualenv&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s create a virtual environment. You can use any name for your virtual environment. In your Terminal.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;virtualenv env&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Activate your virtual environment and navigate into it, then install Django inside your virtual environment&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pip install django&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s create our first Django project.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;django-admn startproject Mysite&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;This will create a folder with the name of your project, in our case, Mysite in your current directory. Navigate to your project folder and fire your project.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Visit http://127.0.0.1:8000/ to have a view of your first Django project.&lt;/p&gt;
-
-&lt;p&gt;Congratulations! You just created your first Django web app.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">DJANGO is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.</summary></entry><entry><title type="html">Part 2: Code editors &amp;amp; Version control system</title><link href="/jekyll/update/2021/06/22/editors-and-vcs.html" rel="alternate" type="text/html" title="Part 2: Code editors &amp;amp; Version control system" /><published>2021-06-22T13:15:20+03:00</published><updated>2021-06-22T13:15:20+03:00</updated><id>/jekyll/update/2021/06/22/editors-and-vcs</id><content type="html" xml:base="/jekyll/update/2021/06/22/editors-and-vcs.html">&lt;h3&gt;Configuring our development environment&lt;/h3&gt;
+&lt;p&gt;&lt;mark&gt;Happy Coding!&lt;/mark&gt;&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Part 2: Code editors & Version control system </title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-22 13:15:20 +0300</updated>
+        <id>http://localhost:4000/editors-and-vcs</id>
+        <content type="html">&lt;h3&gt;Configuring our development environment&lt;/h3&gt;
 
 &lt;h4&gt;Install a code editor&lt;/h4&gt;
 
@@ -457,7 +681,81 @@ origin https://github.com/{your-name}/Mysite.git (push)&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;You will be prompted to enter your username and password.&lt;/p&gt;
 
-&lt;p&gt;Congratulations, you just pushed your code on GitHub!!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Configuring our development environment</summary></entry><entry><title type="html">Hello World!</title><link href="/jekyll/update/2021/06/21/hello.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-21T14:49:19+03:00</published><updated>2021-06-21T14:49:19+03:00</updated><id>/jekyll/update/2021/06/21/hello</id><content type="html" xml:base="/jekyll/update/2021/06/21/hello.html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
+&lt;p&gt;Congratulations, you just pushed your code on GitHub!!&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Part 1: Introduction to Django</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-22 13:15:20 +0300</updated>
+        <id>http://localhost:4000/Introduction-to-Django</id>
+        <content type="html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;Django&lt;/a&gt; is free, open-source and relies on Model View Controller (MVC) pattern. Model is the component that contains the Business logic, View contains the User Interface (UI) logic while Controller is the main control component. Django is fast, secure and scalable, hence the phrase “A web framework for perfectionists with deadlines.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can check out &lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;official Django documentation&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;header&gt;
+	Prerequisites
+&lt;/header&gt;
+&lt;main&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Python (preferably Python3)&lt;/li&gt;
+		&lt;li&gt;A Virtual environment&lt;/li&gt;
+		&lt;li&gt;Django&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/main&gt;
+
+&lt;p&gt;Python comes pre-installed on Linux. If you are using windows, you need to download and install python from &lt;a href=&quot;&amp;quot;https://www.python.org/downloads/windows/&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To check your python installation, open the Terminal and type; for python 2 and python3 respectively.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python -V #To check python version from your terminal(python2)
+
+python3 -V #To check python version from your terminal (python3)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A &lt;a href=&quot;&amp;quot;https://docs.python.org/3/tutorial/venv.html&amp;quot;&quot;&gt;python virtual environment&lt;/a&gt; allows a developer to create isolated environments for his/her python projects. You are not limited to a certain number of virtual environments; You can have as many different virtual environments as you want.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We can use &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;pip&lt;/a&gt; to install a virtual environment. &lt;a href=&quot;&amp;quot;https://pypi.org/project/pip/&amp;quot;&quot;&gt;Pip&lt;/a&gt; is a package installer for python. In your terminal.&lt;/p&gt;
+
+&lt;p&gt;Pip installation - &lt;code&gt;pip install pip&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;To install virtual environments - &lt;code&gt;pip install virtualenv&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s create a virtual environment. You can use any name for your virtual environment. In your Terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;virtualenv env&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Activate your virtual environment and navigate into it, then install Django inside your virtual environment&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pip install django&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s create our first Django project.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;django-admn startproject Mysite&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will create a folder with the name of your project, in our case, Mysite in your current directory. Navigate to your project folder and fire your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Visit http://127.0.0.1:8000/ to have a view of your first Django project.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You just created your first Django web app.&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Hello World!</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-06-21 14:49:19 +0300</updated>
+        <id>http://localhost:4000/hello</id>
+        <content type="html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;my_string = 'hi'
 print(my_string)
@@ -471,4 +769,71 @@ print( my_string + &quot;&quot;, &quot;there&quot; )&lt;/code&gt;&lt;/pre&gt;&lt
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python3&quot; data-lang=&quot;python3&quot;&gt;hi
 h
 2
-hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Working with strings in python.</summary></entry></feed>
+hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Simple Solidity Contract</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-01-27 00:00:00 +0300</updated>
+        <id>http://localhost:4000/simple-contract</id>
+        <content type="html">&lt;p&gt;Hello pals. Welcome to my blog once again. 
+Lets do some simple smart contract in solidity.&lt;/p&gt;
+
+&lt;p&gt;Here is a simple contract that you can store, and retrieve a number in this contract.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.5.0;
+
+/**
+ * @title Storage
+ * @dev Store &amp;amp; retrieve value in a variable
+ */
+contract Storage {
+
+    uint256 number;
+
+    /**
+     * @dev Store value in variable
+     * @param num value to store
+     */
+    function store(uint256 num) public {
+        number = num;
+    }
+
+    /**
+     * @dev Return value 
+     * @return value of 'number'
+     */
+    function retrieve() public view returns (uint256){
+        return number;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first line in our smart contract in solidity shows the licensing of the source code. You can notice that the licensing of the source code follows the GPL version 3.0. It is important to focus on machine-readable license specifiers in an environment that allows the default publication of source code. 
+There are number of &lt;mark&gt;licenses&lt;/mark&gt; out there; //SPDX-License-Identifier: GPL-3.0 is one of them though.&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;pragma&lt;/mark&gt; specifies the compiler version of Solidity. This line shows that the source code is compatible with Solidity version 0.5.0 or newer versions of the language. (pragma solidity ^0.5.0)&lt;/p&gt;
+
+&lt;p&gt;Solidity offers profound support for C-type and C++-type comments. Therefore, any type of text between the characters ‘/&lt;em&gt;’ and ‘&lt;/em&gt;/’ is referred to as a comment which could span multiple lines. In addition, any type of text found between the ‘//’ and the end of a line is referred to as a comment, and most importantly, the Solidity compiler ignores the text. Here is an example that can outline the ideal use of comments.&lt;/p&gt;
+
+&lt;h3 id=&quot;decoding-our-smart-contract&quot;&gt;Decoding our smart contract&lt;/h3&gt;
+
+&lt;p&gt;TODO –&lt;/p&gt;
+
+&lt;p&gt;You can try it on &lt;a href=&quot;&amp;quot;https://remix.ethereum.org/&amp;quot;&quot;&gt;remix&lt;/a&gt;.
+Make sure you have added metamask extension to your brwoser and created an account. Connect your metamask and deploy your contract to the blockchain.&lt;/p&gt;
+
+&lt;p&gt;You can then interact with your contract.&lt;/p&gt;
+
+&lt;p&gt;Yeyy!&lt;/p&gt;
+
+&lt;p&gt;Its that simple noobs.&lt;/p&gt;
+</content>
+    </entry>
+    
+
+</feed>

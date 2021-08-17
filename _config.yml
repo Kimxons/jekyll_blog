@@ -1,10 +1,22 @@
-title: My Random Thoughts
-name: My Random Thoughts
-description: A home for meshack's random thoughts. n<00>bs
-baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kimxons.github.io"
 
-  # Build settings
-theme: minima
+highlighter: rouge
+permalink: /:title/
+markdown: kramdown
+
+future: true
+
 plugins:
-  - jekyll-feed
+  - jekyll-redirect-from
+
+exclude:
+  - 'node_modules'
+  - 'scripts'
+  - 'vendor'
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE.txt
+  - CNAME
