@@ -10,10 +10,9 @@ categories: post
 
 You can check out [official Django documentation]("https://www.djangoproject.com/") for more information.
 
+Prerequisites
+===============
 
-<header>
-	Prerequisites
-</header>
 <main>
 	<ul>
 		<li>Python (preferably Python3)</li>

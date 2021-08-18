@@ -4,7 +4,7 @@
     <title>Meshack K. Kimwele</title>
     <link href="http://localhost:4000/atom.xml" rel="self"/>
     <link href="http://localhost:4000"/>
-    <updated>2021-08-18T20:09:55+03:00</updated>
+    <updated>2021-08-18T20:17:56+03:00</updated>
     <id>http://localhost:4000</id>
     <author>
         <name>Meshack K. Kimwele</name>
@@ -698,9 +698,8 @@ origin https://github.com/{your-name}/Mysite.git (push)&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;You can check out &lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;official Django documentation&lt;/a&gt; for more information.&lt;/p&gt;
 
-&lt;header&gt;
-	Prerequisites
-&lt;/header&gt;
+&lt;h1 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h1&gt;
+
 &lt;main&gt;
 	&lt;ul&gt;
 		&lt;li&gt;Python (preferably Python3)&lt;/li&gt;
