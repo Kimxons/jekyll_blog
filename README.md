@@ -1,7 +1,7 @@
 meshackkimwele.com
 ==================
 
-Blog posts, presentations, podcasts, and other things...
+Blog posts, Personal website, and more...
 
 Development
 ===========
