@@ -4,12 +4,100 @@
     <title>Meshack K. Kimwele</title>
     <link href="http://localhost:4000/atom.xml" rel="self"/>
     <link href="http://localhost:4000"/>
-    <updated>2021-08-18T20:41:53+03:00</updated>
+    <updated>2021-08-19T00:18:14+03:00</updated>
     <id>http://localhost:4000</id>
     <author>
         <name>Meshack K. Kimwele</name>
     </author>
 
+    
+    <entry>
+        <title>Locally Host Website using Apache2 Ubuntu Server</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-08-18 00:00:00 +0300</updated>
+        <id>http://localhost:4000/Locally-Host-website-using-Apache2-Ubuntu-Server</id>
+        <content type="html">&lt;p&gt;This is a simple guide on how to host a simple website locall in Apache
+Web Server in Linux.&lt;/p&gt;
+
+&lt;h1 id=&quot;install-apache&quot;&gt;Install Apache&lt;/h1&gt;
+
+&lt;p&gt;We install Apache from the apt repository in Linux.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;some-useful-commands&quot;&gt;Some Useful Commands&lt;/h1&gt;
+
+&lt;p&gt;To start apache2 server&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can as well restart Apache2 server&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can as well reload the apache2 server&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can check the status of Apache2 server&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can stop the server&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After starting the apache2 server, you can check it on your browser by visiting this address&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://127.0.0.1/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see the default page provided by Apache… to upload an image&lt;/p&gt;
+
+&lt;h1 id=&quot;creating-our-website&quot;&gt;Creating our website&lt;/h1&gt;
+&lt;p&gt;We will navigate to /var/www/html and create our project’s directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /var/www/html
+
+sudo mkdir Hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s navigate inside our project’s directory and create our index.html file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /Hello/
+
+sudo nano index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s add this inside our index.html file&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello World.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;hosting-the-website-on-apache2-web-server&quot;&gt;Hosting the website on Apache2 web Server&lt;/h1&gt;
+
+&lt;p&gt;Let’s check the status of our server and run it if its inactive.
+We navigate to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; http://127.0.0.1/Hello/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;in our browser.&lt;/p&gt;
+
+&lt;p&gt;Yeey! it works. We just hosted our website on apache2 web server.&lt;/p&gt;
+
+</content>
+    </entry>
     
     <entry>
         <title>Application Programming Interface (API)</title>
