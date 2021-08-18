@@ -4,12 +4,60 @@
     <title>Meshack K. Kimwele</title>
     <link href="http://localhost:4000/atom.xml" rel="self"/>
     <link href="http://localhost:4000"/>
-    <updated>2021-08-19T00:18:14+03:00</updated>
+    <updated>2021-08-19T01:03:11+03:00</updated>
     <id>http://localhost:4000</id>
     <author>
         <name>Meshack K. Kimwele</name>
     </author>
 
+    
+    <entry>
+        <title>Install And Configure Phpmyadmin On Linux</title>
+        <link href="http://localhost:4000"/>
+        <updated>2021-08-19 00:00:00 +0300</updated>
+        <id>http://localhost:4000/Install-and-configure-phpmyadmin-on-linux</id>
+        <content type="html">&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: “Install and Configure phpMyAdmin on Linux”
+categories: post
+—-&lt;/p&gt;
+
+&lt;p&gt;phpMyAdmin is a web-based database management program.&lt;/p&gt;
+
+&lt;h1 id=&quot;pre-requisites&quot;&gt;Pre-requisites&lt;/h1&gt;
+
+&lt;p&gt;php 5 and above
+mysql5
+Apache2&lt;/p&gt;
+
+&lt;h1 id=&quot;guidelines&quot;&gt;Guidelines&lt;/h1&gt;
+
+&lt;p&gt;Navigat to Apache2 Document root and download the latest version of phpmyadmin from:
+http://www.phpmyadmin.net/home_page/downloads.php&lt;/p&gt;
+
+&lt;p&gt;Unzip the files using tar command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar phpMyAdmin-5.1.1-all-languages.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Rename the file to phpMyAdmin&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv phpMyAdmin-5.1.1-all-languages phpMyAdmin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;configurations&quot;&gt;Configurations&lt;/h1&gt;
+
+&lt;p&gt;Open a browser and visit:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://{your-ip-address}/phpMyAdmin/setup/index.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or
+    http://127.0.0.1/phpMyAdmin/setup/index.php&lt;/p&gt;
+
+&lt;p&gt;TODO - we will continue from there&lt;/p&gt;
+</content>
+    </entry>
     
     <entry>
         <title>Locally Host Website using Apache2 Ubuntu Server</title>
