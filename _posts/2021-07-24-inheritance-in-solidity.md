@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Inheritance in Solidity"
-date: 2021-07-24 15:45:25 +0300
-categories: jekyll update
+categories: post
 ---
 
 Inheritance consists of the word “Inherit”, which means “To Derive”. 

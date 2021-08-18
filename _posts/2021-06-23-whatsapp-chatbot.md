@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Whatsapp Chatbot in Flask & Twillio"
-date:   2021-06-23 07:30:20 +0300
-categories: jekyll update
+categories: jpost
 ---
 
 A [chatbot]("https://en.wikipedia.org/wiki/Chatbot") is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live **human agent**.

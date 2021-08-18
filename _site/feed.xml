@@ -4,17 +4,17 @@
     <title>Meshack K. Kimwele</title>
     <link href="http://localhost:4000/atom.xml" rel="self"/>
     <link href="http://localhost:4000"/>
-    <updated>2021-08-18T01:03:40+03:00</updated>
+    <updated>2021-08-18T20:09:55+03:00</updated>
     <id>http://localhost:4000</id>
     <author>
-        <name>Meshack Kimwele</name>
+        <name>Meshack K. Kimwele</name>
     </author>
 
     
     <entry>
         <title>Application Programming Interface (API)</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-08-01 22:40:19 +0300</updated>
+        <updated>2021-08-01 00:00:00 +0300</updated>
         <id>http://localhost:4000/api</id>
         <content type="html">&lt;p&gt;If you have been a regular computer user, prrobably you have heard of an API.&lt;/p&gt;
 
@@ -46,7 +46,7 @@ add (2+3); // call the function
     <entry>
         <title>Inheritance in Solidity</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-07-24 15:45:25 +0300</updated>
+        <updated>2021-07-24 00:00:00 +0300</updated>
         <id>http://localhost:4000/inheritance-in-solidity</id>
         <content type="html">&lt;p&gt;Inheritance consists of the word “Inherit”, which means “To Derive”.&lt;/p&gt;
 
@@ -146,10 +146,10 @@ contract E is C, B {
     </entry>
     
     <entry>
-        <title>Noob Token</title>
+        <title></title>
         <link href="http://localhost:4000"/>
-        <updated>2021-07-06 00:26:19 +0300</updated>
-        <id>http://localhost:4000/still-on-smart-contracts</id>
+        <updated></updated>
+        <id>http://localhost:4000/2021-07-06-still-on-smart-contracts</id>
         <content type="html">&lt;h2 id=&quot;not-perfect-yet&quot;&gt;Not perfect yet&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// SPDX-License-Identifier: GPL-3.0
@@ -282,7 +282,7 @@ function transfer(address to, uint256 amount) public returns (bool) {
     <entry>
         <title>Sample Token</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-28 07:46:30 +0300</updated>
+        <updated>2021-06-28 00:00:00 +0300</updated>
         <id>http://localhost:4000/SampleToken</id>
         <content type="html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
@@ -303,7 +303,7 @@ function transfer(address to, uint256 amount) public returns (bool) {
     <entry>
         <title>Helo Noob</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-25 07:30:20 +0300</updated>
+        <updated>2021-06-25 00:00:00 +0300</updated>
         <id>http://localhost:4000/noob</id>
         <content type="html">&lt;p&gt;Hello Noob, Welcome to my world!&lt;/p&gt;
 
@@ -316,7 +316,7 @@ function transfer(address to, uint256 amount) public returns (bool) {
     <entry>
         <title>Whatsapp Chatbot in Flask & Twillio</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-23 07:30:20 +0300</updated>
+        <updated>2021-06-23 00:00:00 +0300</updated>
         <id>http://localhost:4000/whatsapp-chatbot</id>
         <content type="html">&lt;p&gt;A &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/Chatbot&amp;quot;&quot;&gt;chatbot&lt;/a&gt; is a software application that is used to conduct an on-line conversation with a human user through written or text-to-speech, in lieu of providing direct contact with a live &lt;strong&gt;human agent&lt;/strong&gt;.&lt;/p&gt;
 
@@ -469,7 +469,7 @@ if not responded:
     <entry>
         <title>The Linux Permissions</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-23 07:20:20 +0300</updated>
+        <updated>2021-06-23 00:00:00 +0300</updated>
         <id>http://localhost:4000/linux-permisions</id>
         <content type="html">&lt;p&gt;It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.&lt;/p&gt;
 
@@ -532,7 +532,7 @@ asdfgh
     <entry>
         <title>The Django Admin</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-23 07:10:19 +0300</updated>
+        <updated>2021-06-23 00:00:00 +0300</updated>
         <id>http://localhost:4000/django-admin</id>
         <content type="html">&lt;p&gt;In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.&lt;/p&gt;
 
@@ -596,9 +596,9 @@ Superuser created successfully.
     </entry>
     
     <entry>
-        <title>Part 2: Code editors & Version control system </title>
+        <title>Part 2: Code editors & Version control system</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-22 13:15:20 +0300</updated>
+        <updated>2021-06-22 00:00:00 +0300</updated>
         <id>http://localhost:4000/editors-and-vcs</id>
         <content type="html">&lt;h3&gt;Configuring our development environment&lt;/h3&gt;
 
@@ -688,7 +688,7 @@ origin https://github.com/{your-name}/Mysite.git (push)&lt;/code&gt;&lt;/p&gt;
     <entry>
         <title>Part 1: Introduction to Django</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-22 13:15:20 +0300</updated>
+        <updated>2021-06-22 00:00:00 +0300</updated>
         <id>http://localhost:4000/Introduction-to-Django</id>
         <content type="html">&lt;p&gt;&lt;a href=&quot;&amp;quot;https://www.djangoproject.com/&amp;quot;&quot;&gt;DJANGO&lt;/a&gt; is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.&lt;/p&gt;
 
@@ -753,7 +753,7 @@ python3 -V #To check python version from your terminal (python3)
     <entry>
         <title>Hello World!</title>
         <link href="http://localhost:4000"/>
-        <updated>2021-06-21 14:49:19 +0300</updated>
+        <updated>2021-06-21 00:00:00 +0300</updated>
         <id>http://localhost:4000/hello</id>
         <content type="html">&lt;p&gt;Working with strings in python.&lt;/p&gt;
 
@@ -770,6 +770,7 @@ print( my_string + &quot;&quot;, &quot;there&quot; )&lt;/code&gt;&lt;/pre&gt;&lt
 h
 2
 hi there&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 </content>
     </entry>
     

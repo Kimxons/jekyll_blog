@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Part 1: Introduction to Django"
-date: 2021-06-22 13:15:20 +0300
-categories: jekyll update
+categories: post
 ---
 
 [DJANGO]("https://www.djangoproject.com/") is a high level python web framework that is built entirely in python. A web framework is a collection of packages or modules that helps a developer to write web applications or services with less code.

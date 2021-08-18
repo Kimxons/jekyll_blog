@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "The Django Admin"
-date:   2021-06-23 07:10:19 +0300
-categories: jekyll update
+categories: post
 ---
 
 In this tutorial, we are going to be checking out the admin functionality that comes with Django. Let’s start by creating an administrator user.

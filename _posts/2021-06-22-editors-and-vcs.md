@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "Part 2: Code editors & Version control system
-"
-date: 2021-06-22 13:15:20 +0300
-categories: jekyll update
+title: "Part 2: Code editors & Version control system"
+categories: post
 ---
 
 <h3>Configuring our development environment</h3>

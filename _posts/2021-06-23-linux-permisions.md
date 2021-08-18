@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "The Linux Permissions"
-date:   2021-06-23 07:20:20 +0300
-categories: jekyll update
+categories: post
 ---
 
 It is important to understand the permissions model of Linux machines. Understanding how to manage these permissions is helpful in preventing some security threats (attacks) that exploit the Linux system. Files and directories in your Linux System consist of three permissions: Read, Write, and Execute. Linux inherits the Unix model of file ownership and permissions. The permissions dictate who is allowed to do what with any given file or directory in Linux.

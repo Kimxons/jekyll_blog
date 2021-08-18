@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Sample Token"
-date:   2021-06-28 07:46:30 +0300
-categories: jekyll update
+categories: post
 ---
 
 	pragma solidity ^0.7.0;

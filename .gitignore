@@ -6,3 +6,5 @@ capture/
 .idea/
 *.swp
 *.swo
+*.swn
+*.swm
