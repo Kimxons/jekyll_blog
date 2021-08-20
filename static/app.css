@@ -18,7 +18,7 @@ html {
 }
 body {
   min-height: 100%;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'monospace', sans-serif;
   background-color: var(--background-color);
   color: var(--foreground-color);
 }
@@ -32,7 +32,7 @@ a:hover, a:active {
 }
 
 ul, ol {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
 code {
@@ -52,24 +52,6 @@ header {
   background-color: var(--header-background-color);
   color: var(--header-foreground-color);
   padding: 40px;
-}
-header h1 {
-  text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 15px;
-  margin: 0 0 0 4px;
-}
-@media (max-width: 767px) {
-  header {
-    padding: 30px;
-  }
-  header h1 {
-    letter-spacing: 5px;
-    font-size: 40px;
-  }
-  .list-inline li {
-    display: list-item;
-  }
 }
 
 header h1 a, header h1 a:focus {
